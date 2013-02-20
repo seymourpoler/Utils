@@ -1,5 +1,4 @@
 ﻿
-
 <style type="text/css">
    div.jqplot-table-legend-swatch {
     width: 5px;

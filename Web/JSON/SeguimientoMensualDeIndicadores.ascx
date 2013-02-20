@@ -1,5 +1,4 @@
 ﻿
-
 <script type="text/javascript" src="/js/funciones.js"></script>
 <script type="text/javascript" src="/js/jquery.dataTables.js"></script>
 <script type="text/javascript" src="/js/gestorHTMLControles.js"></script>

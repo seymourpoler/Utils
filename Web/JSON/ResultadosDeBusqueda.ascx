@@ -1,5 +1,4 @@
 ﻿
-
 <script type="text/javascript" src="/_layouts/1033/PortalCliente/js/funciones.js"></script>
 <script type="text/javascript" src="/_layouts/1033/PortalCliente/js/gestorHTMLControles.js"></script>
 <script type="text/javascript" src="/_layouts/1033/PortalCliente/js/jquery.dataTables.js"></script>
