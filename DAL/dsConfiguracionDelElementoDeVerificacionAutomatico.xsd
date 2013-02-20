@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsConfiguracionDelElementoDeVerificacionAutomatico" targetNamespace="http://tempuri.org/dsConfiguracionDelElementoDeVerificacionAutomatico.xsd" xmlns:mstns="http://tempuri.org/dsConfiguracionDelElementoDeVerificacionAutomatico.xsd" xmlns="http://tempuri.org/dsConfiguracionDelElementoDeVerificacionAutomatico.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsConfiguracionDelElementoDeVerificacionAutomatico" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsConfiguracionDelElementoDeVerificacionAutomatico" msprop:Generator_DataSetName="dsConfiguracionDelElementoDeVerificacionAutomatico" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ConfiguracionDelElementoDeVerificacionAutomatico" msprop:Generator_UserTableName="ConfiguracionDelElementoDeVerificacionAutomatico" msprop:Generator_RowDeletedName="ConfiguracionDelElementoDeVerificacionAutomaticoRowDeleted" msprop:Generator_RowChangedName="ConfiguracionDelElementoDeVerificacionAutomaticoRowChanged" msprop:Generator_RowClassName="ConfiguracionDelElementoDeVerificacionAutomaticoRow" msprop:Generator_RowChangingName="ConfiguracionDelElementoDeVerificacionAutomaticoRowChanging" msprop:Generator_RowEvArgName="ConfiguracionDelElementoDeVerificacionAutomaticoRowChangeEvent" msprop:Generator_RowEvHandlerName="ConfiguracionDelElementoDeVerificacionAutomaticoRowChangeEventHandler" msprop:Generator_TableClassName="ConfiguracionDelElementoDeVerificacionAutomaticoDataTable" msprop:Generator_TableVarName="tableConfiguracionDelElementoDeVerificacionAutomatico" msprop:Generator_RowDeletingName="ConfiguracionDelElementoDeVerificacionAutomaticoRowDeleting" msprop:Generator_TablePropName="ConfiguracionDelElementoDeVerificacionAutomatico">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TipoEV" msprop:Generator_UserColumnName="TipoEV" msprop:Generator_ColumnVarNameInTable="columnTipoEV" msprop:Generator_ColumnPropNameInRow="TipoEV" msprop:Generator_ColumnPropNameInTable="TipoEVColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EntidadDestino" msprop:Generator_UserColumnName="EntidadDestino" msprop:Generator_ColumnVarNameInTable="columnEntidadDestino" msprop:Generator_ColumnPropNameInRow="EntidadDestino" msprop:Generator_ColumnPropNameInTable="EntidadDestinoColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AlgoritmoAplica" msprop:Generator_UserColumnName="AlgoritmoAplica" msprop:Generator_ColumnVarNameInTable="columnAlgoritmoAplica" msprop:Generator_ColumnPropNameInRow="AlgoritmoAplica" msprop:Generator_ColumnPropNameInTable="AlgoritmoAplicaColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="NumMaxRepeticiones" msprop:Generator_UserColumnName="NumMaxRepeticiones" msprop:Generator_ColumnVarNameInTable="columnNumMaxRepeticiones" msprop:Generator_ColumnPropNameInRow="NumMaxRepeticiones" msprop:Generator_ColumnPropNameInTable="NumMaxRepeticionesColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="PeriodicidadDefecto" msprop:Generator_UserColumnName="PeriodicidadDefecto" msprop:Generator_ColumnVarNameInTable="columnPeriodicidadDefecto" msprop:Generator_ColumnPropNameInRow="PeriodicidadDefecto" msprop:Generator_ColumnPropNameInTable="PeriodicidadDefectoColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="NombreEnDestino" msprop:Generator_UserColumnName="NombreEnDestino" msprop:Generator_ColumnVarNameInTable="columnNombreEnDestino" msprop:Generator_ColumnPropNameInRow="NombreEnDestino" msprop:Generator_ColumnPropNameInTable="NombreEnDestinoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Confirmado" msprop:Generator_UserColumnName="Confirmado" msprop:Generator_ColumnPropNameInRow="Confirmado" msprop:Generator_ColumnVarNameInTable="columnConfirmado" msprop:Generator_ColumnPropNameInTable="ConfirmadoColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
