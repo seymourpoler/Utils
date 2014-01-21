@@ -1,0 +1,11 @@
+c:\Temp\CodeFirstSample\CodeFirstSample\bin\Debug\CodeFirstSample.dll
+c:\Temp\CodeFirstSample\CodeFirstSample\bin\Debug\CodeFirstSample.pdb
+c:\Temp\CodeFirstSample\CodeFirstSample\bin\Debug\EntityFramework.dll
+c:\Temp\CodeFirstSample\CodeFirstSample\obj\Debug\CodeFirstSample.csprojResolveAssemblyReference.cache
+c:\Temp\CodeFirstSample\CodeFirstSample\obj\Debug\CodeFirstSample.dll
+c:\Temp\CodeFirstSample\CodeFirstSample\obj\Debug\CodeFirstSample.pdb
+F:\CodeFirstSample\CodeFirstSample\bin\Debug\CodeFirstSample.dll
+F:\CodeFirstSample\CodeFirstSample\bin\Debug\CodeFirstSample.pdb
+F:\CodeFirstSample\CodeFirstSample\obj\Debug\CodeFirstSample.csprojResolveAssemblyReference.cache
+F:\CodeFirstSample\CodeFirstSample\obj\Debug\CodeFirstSample.dll
+F:\CodeFirstSample\CodeFirstSample\obj\Debug\CodeFirstSample.pdb
