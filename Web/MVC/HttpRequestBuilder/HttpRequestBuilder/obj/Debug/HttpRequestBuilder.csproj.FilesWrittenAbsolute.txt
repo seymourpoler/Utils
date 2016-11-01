@@ -1,0 +1,14 @@
+/home/luis/Documents/code/HttpRequestBuilder/HttpRequestBuilder/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/luis/Documents/code/HttpRequestBuilder/HttpRequestBuilder/bin/Debug/HttpRequestBuilder.dll.mdb
+/home/luis/Documents/code/HttpRequestBuilder/HttpRequestBuilder/bin/Debug/HttpRequestBuilder.dll
+/home/luis/Documents/code/HttpRequestBuilder/HttpRequestBuilder/obj/Debug/HttpRequestBuilder.dll
+/home/luis/Documents/code/HttpRequestBuilder/HttpRequestBuilder/obj/Debug/HttpRequestBuilder.dll.mdb
+/home/luis/Documents/code/HttpRequestBuilder/HttpRequestBuilder/bin/Debug/Microsoft.Web.Infrastructure.dll
+/home/luis/Documents/code/HttpRequestBuilder/HttpRequestBuilder/bin/Debug/System.Web.Razor.dll
+/home/luis/Documents/code/HttpRequestBuilder/HttpRequestBuilder/bin/Debug/System.Web.Helpers.dll
+/home/luis/Documents/code/HttpRequestBuilder/HttpRequestBuilder/bin/Debug/System.Web.WebPages.dll
+/home/luis/Documents/code/HttpRequestBuilder/HttpRequestBuilder/bin/Debug/System.Web.WebPages.Deployment.dll
+/home/luis/Documents/code/HttpRequestBuilder/HttpRequestBuilder/bin/Debug/System.Web.WebPages.Razor.dll
+/home/luis/Documents/code/HttpRequestBuilder/HttpRequestBuilder/bin/Debug/System.Web.Mvc.dll
+/home/luis/Documents/code/HttpRequestBuilder/HttpRequestBuilder/bin/Debug/Castle.Core.dll
+/home/luis/Documents/code/HttpRequestBuilder/HttpRequestBuilder/bin/Debug/Moq.dll
