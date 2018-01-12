@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Dynamic;
@@ -24,8 +25,16 @@ namespace Gambon.Core
                 	.ToList()
                 	.ForEach(result.Add);
                 return result;
-            } 
-            var properties = thing.GetType().GetProperties();
+            }
+            if (typeof(IDictionary).IsAssignableFrom(thing.GetType()))
+			{
+                var nameValueCollection = (Dictionary <string, object>)thing;
+                nameValueCollection
+                    .ToList()
+					.ForEach(result.Add);
+				return result;
+			}
+			var properties = thing.GetType().GetProperties();
                 foreach (var property in properties) {
                     result.Add(property.Name, property.GetValue(thing, null));
                 }

@@ -1,7 +1,6 @@
 ﻿using Gambon.Core;
 using NUnit.Framework;
 using System.Collections.Specialized;
-using System.Collections.Generic;
 
 namespace GambonUnitTest.Core
 {
@@ -31,19 +30,5 @@ namespace GambonUnitTest.Core
 
             Assert.AreEqual("valueThree", result.keyThree);
         }
-
-		[Test]
-		public void ReturnsDynamicWhereIsDictionary()
-		{
-			var values = new Dictionary<string, string>();
-			values.Add("keyOne", "valueOne");
-			values.Add("keyTwo", "valueTwo");
-			values.Add("keyThree", "valueThree");
-			values.Add("keyFour", "valueFour");
-
-			var result = values.ToDynamic();
-
-			Assert.AreEqual("valueTwo", result.keyTwo);
-		}
     }
 }
