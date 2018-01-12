@@ -1,19 +1,13 @@
-﻿using System;
-using Gambon.Core;
+﻿using Gambon.Core;
 using NUnit.Framework;
+using System.Collections.Specialized;
+using System.Collections.Generic;
 
 namespace GambonUnitTest.Core
 {
-	/// <summary>
-	/// Description of ObjectExtensionsTests.
-	/// </summary>
-	[TestFixture]
+    [TestFixture]
 	public class ObjectExtensionsTests
 	{
-		[SetUp]
-		public void SetUp()
-		{}
-		
 		[Test]
 		public void ReturnsNullWhenIsNull()
 		{
@@ -23,5 +17,33 @@ namespace GambonUnitTest.Core
 			
 			Assert.IsNull(thing);
 		}
-	}
+
+        [Test]
+        public void ReturnsDynamicWhereIsNameValueCollection()
+        {
+            var values = new NameValueCollection();
+            values.Add("keyOne", "valueOne");
+            values.Add("keyTwo", "valueTwo");
+            values.Add("keyThree", "valueThree");
+            values.Add("keyFour", "valueFour");
+
+            var result = values.ToDynamic();
+
+            Assert.AreEqual("valueThree", result.keyThree);
+        }
+
+		[Test]
+		public void ReturnsDynamicWhereIsDictionary()
+		{
+			var values = new Dictionary<string, string>();
+			values.Add("keyOne", "valueOne");
+			values.Add("keyTwo", "valueTwo");
+			values.Add("keyThree", "valueThree");
+			values.Add("keyFour", "valueFour");
+
+			var result = values.ToDynamic();
+
+			Assert.AreEqual("valueTwo", result.keyTwo);
+		}
+    }
 }

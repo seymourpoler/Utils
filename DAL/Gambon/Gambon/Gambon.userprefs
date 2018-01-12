@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{2E67E80C-B0C6-470A-B290-CDB254ECF6F7}|Unit Tests">
+  <MonoDevelop.Ide.Workbench ActiveDocument="test/unit/Gambon/Core/ObjectExtensionsTests.cs">
+    <Files>
+      <File FileName="src/Core/ObjectExtensions.cs" Line="19" Column="62" />
+      <File FileName="test/unit/Gambon/Core/ObjectExtensionsTests.cs" Line="35" Column="51" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/home/luis/Documents/code/GitHub/Utils/DAL/Gambon/Gambon/test/unit/Gambon/Core/ObjectExtensionsTests.cs" relfile="test/unit/Gambon/Core/ObjectExtensionsTests.cs" line="15" column="6" />
+      <Breakpoint file="/home/luis/Documents/code/GitHub/Utils/DAL/Gambon/Gambon/test/unit/Gambon/Core/ObjectExtensionsTests.cs" relfile="test/unit/Gambon/Core/ObjectExtensionsTests.cs" line="27" column="20" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.test.unit.Gambon PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -32,7 +32,6 @@ namespace Gambon.Core
             return result;
         }
 		
-		
 		public static IDictionary<string, object> ToDictionary(this object thing) {
             return (IDictionary<string, object>)thing.ToDynamic();
         }
