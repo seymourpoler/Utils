@@ -10,7 +10,7 @@ namespace GambonUnitTest.Core
 		[Test]
 		public void ReturnsDynamicWhereIsDictionary()
 		{
-			var values = new Dictionary<string, object>();
+            var values = new Dictionary<string, object>();
 			values.Add("keyOne", "valueOne");
 			values.Add("keyTwo", "valueTwo");
 			values.Add("keyThree", "valueThree");

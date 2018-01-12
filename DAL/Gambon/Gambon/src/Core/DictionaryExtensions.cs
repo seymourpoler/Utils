@@ -6,7 +6,7 @@ namespace Gambon.Core
 {
     public static class DictionaryExtensions
     {
-        public static dynamic ToDynamic(IDictionary<string, object> dictionary)
+        public static dynamic ToDynamic(IDictionary dictionary)
         {
 			IDictionary<string, object> result = new ExpandoObject() as IDictionary<string, object>;
             foreach (KeyValuePair<string, object> item in dictionary)
