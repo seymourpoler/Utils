@@ -1,6 +1,7 @@
 ﻿using Gambon.Core;
 using NUnit.Framework;
 using System.Collections.Specialized;
+using System;
 
 namespace GambonUnitTest.Core
 {
@@ -48,6 +49,23 @@ namespace GambonUnitTest.Core
             var result = entity.ToDictionary();
 
             Assert.AreEqual("valueTwo", result["keyTwo"]);
+        }
+
+		[Test]
+		public void ReturnsDictionaryFromObject()
+		{
+            var id = Guid.NewGuid();
+            var entity = new User{ Id = id, Name = "Name", Age = 2 };
+
+			var result = entity.ToDictionary();
+
+			Assert.AreEqual(id, result["Id"]);
+		}
+
+        private class User{
+            public Guid Id { get; set; }
+            public string Name { get; set; }
+            public int Age { get; set; }
         }
     }
 }
