@@ -30,5 +30,24 @@ namespace GambonUnitTest.Core
 
             Assert.AreEqual("valueThree", result.keyThree);
         }
+
+        [Test]
+        public void ReturnsNullFromNullDictionary()
+        {
+            object thing = null;
+
+            var result = thing.ToDictionary();
+
+            Assert.IsNull(result);
+        }
+
+        [Test]
+        public void ReturnsDictionaryFromDynamic(){
+            var entity = new { keyOne = "valuOne", keyTwo = "valueTwo" };
+
+            var result = entity.ToDictionary();
+
+            Assert.AreEqual("valueTwo", result["keyTwo"]);
+        }
     }
 }

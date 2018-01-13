@@ -12,7 +12,8 @@ namespace Gambon.Core
 	/// </summary>
 	public static class ObjectExtensions
 	{
-		public static dynamic ToDynamic(this object thing) {
+        public static dynamic ToDynamic(this object thing)
+        {
 			if (thing is ExpandoObject)
 				return thing; //shouldn't have to... but just in case
             var expando = new ExpandoObject();
@@ -42,6 +43,9 @@ namespace Gambon.Core
         }
 		
 		public static IDictionary<string, object> ToDictionary(this object thing) {
+            if(thing == null){
+                return null;
+            }
             return (IDictionary<string, object>)thing.ToDynamic();
         }
 	}
