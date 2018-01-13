@@ -7,9 +7,6 @@ using System.Linq;
 
 namespace Gambon.Core
 {
-	/// <summary>
-	/// Description of ObjectExtensions.
-	/// </summary>
 	public static class ObjectExtensions
 	{
         public static dynamic ToDynamic(this object thing)
