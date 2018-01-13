@@ -1,17 +1,33 @@
 ﻿<Properties StartupConfiguration="{2E67E80C-B0C6-470A-B290-CDB254ECF6F7}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="src/Core/DictionaryExtensions.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="test/unit/Gambon/Core/ObjectExtensionsTests.cs">
     <Files>
-      <File FileName="src/Core/ObjectExtensions.cs" Line="34" Column="19" />
-      <File FileName="test/unit/Gambon/Core/ObjectExtensionsTests.cs" Line="35" Column="1" />
-      <File FileName="src/Core/DictionaryExtensions.cs" Line="11" Column="1" />
-      <File FileName="test/unit/Gambon/Core/DictionaryExtensionsTests.cs" Line="19" Column="1" />
+      <File FileName="src/Core/ObjectExtensions.cs" Line="43" Column="1" />
+      <File FileName="test/unit/Gambon/Core/ObjectExtensionsTests.cs" Line="44" Column="4" />
     </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Gambon" expanded="True">
+            <Node name="test" expanded="True">
+              <Node name="unit" expanded="True">
+                <Node name="Gambon" expanded="True">
+                  <Node name="GambonUnitTest" expanded="True">
+                    <Node name="Core" expanded="True">
+                      <Node name="ObjectExtensionsTests" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/home/luis/Documents/code/GitHub/Utils/DAL/Gambon/Gambon/test/unit/Gambon/Core/ObjectExtensionsTests.cs" relfile="test/unit/Gambon/Core/ObjectExtensionsTests.cs" line="44" column="18" />
-      <Breakpoint file="/home/luis/Documents/code/GitHub/Utils/DAL/Gambon/Gambon/test/unit/Gambon/Core/DictionaryExtensionsTests.cs" relfile="test/unit/Gambon/Core/DictionaryExtensionsTests.cs" line="19" column="22" />
+      <Breakpoint file="/home/luis/Documents/code/GitHub/Utils/DAL/Gambon/Gambon/test/unit/Gambon/Core/ObjectExtensionsTests.cs" relfile="test/unit/Gambon/Core/ObjectExtensionsTests.cs" line="106" column="18" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.test.unit.Gambon PreferredExecutionTarget="MonoDevelop.Default" />
