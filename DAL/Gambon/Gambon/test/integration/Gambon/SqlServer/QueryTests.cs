@@ -1,4 +1,5 @@
-﻿using Gambon.SqlServer;
+﻿using System.Collections.Generic;
+using Gambon.SqlServer;
 using NUnit.Framework;
 using System;
 
@@ -23,6 +24,7 @@ namespace GambonIntegrationTest.SqlServer
 			var users = query.Execute("SELECT * FROM USERS");
 			
 			Assert.IsNotNull(users);
+			Assert.IsInstanceOf(typeof(IEnumerable<dynamic>), users);
 		}
 	}
 }
