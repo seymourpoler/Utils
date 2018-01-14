@@ -37,7 +37,8 @@ namespace GambonIntegrationTest.SqlServer
 		
 		[Test]
 		public void ReturnsIdentificatorFromInsertedUser(){
-			var userId = sqlExecutor.ExecuteNonQuery("INSERT INTO USERS (Email, FirstName, LastName, Age) VALUES ('pp@pp.es', 'John', 'Smith', 53)");
+			const string sql = "INSERT INTO USERS (Email, FirstName, LastName, Age) VALUES ('pp@pp.es', 'John', 'Smith', 53)";
+			var userId = sqlExecutor.ExecuteNonQuery(sql);
 			
 			Assert.IsInstanceOf(typeof(int), userId);
 		}
