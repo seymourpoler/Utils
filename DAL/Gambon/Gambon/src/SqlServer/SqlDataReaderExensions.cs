@@ -5,7 +5,7 @@ using System.Dynamic;
 
 namespace Gambon.SqlServer
 {
-	public static class DataReaderExensions
+	public static class SqlDataReaderExensions
 	{
 		public static dynamic ToDynamic(this SqlDataReader dataReader) {
 			dynamic e = new ExpandoObject();
