@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Linq;
 
 namespace Gambon.SqlServer
 {
-	public class Query
+	public class SqlExecutor
 	{
 		private readonly SqlConnectionFactory sqlConnectionFactory;
 		
-		public Query(SqlConnectionFactory sqlConnectionFactory)
+		public SqlExecutor(SqlConnectionFactory sqlConnectionFactory)
 		{
 			this.sqlConnectionFactory = sqlConnectionFactory;
 		}
@@ -22,6 +23,10 @@ namespace Gambon.SqlServer
 				 	yield return dataReader.ToDynamic();
                  }
 			}
+		}
+		
+		public dynamic FirstOrDefault(string sql){
+			return Execute(sql).FirstOrDefault();
 		}
 	}
 }

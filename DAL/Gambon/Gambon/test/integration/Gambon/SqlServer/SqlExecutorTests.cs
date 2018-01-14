@@ -6,25 +6,32 @@ using System;
 namespace GambonIntegrationTest.SqlServer
 {
 	[TestFixture]
-	public class QueryTests
+	public class SqlExecutorTests
 	{
 		private Configuration configuration;
 		private SqlConnectionFactory sqlConnectionFactory;
-		private Query query;
+		private SqlExecutor sqlExecutor;
 		
 		[SetUp]
 		public void SetUp(){
 			configuration = new Configuration();
 			sqlConnectionFactory = new SqlConnectionFactory(configuration);
-			query = new Query(sqlConnectionFactory);
+			sqlExecutor = new SqlExecutor(sqlConnectionFactory);
 		}
 		
 		[Test]
 		public void ReturnsAllFromUsers(){
-			var users = query.Execute("SELECT * FROM USERS");
+			var users = sqlExecutor.Execute("SELECT * FROM USERS");
 			
 			Assert.IsNotNull(users);
 			Assert.IsInstanceOf(typeof(IEnumerable<dynamic>), users);
+		}
+		
+		[Test]
+		public void ReturnsFirstOrDefaultFromUsers(){
+			var result = sqlExecutor.FirstOrDefault("SELECT * FROM USERS");
+			
+			Assert.IsNull(result);
 		}
 	}
 }

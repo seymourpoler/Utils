@@ -54,7 +54,7 @@
     <Compile Include="SqlServer\Configuration.cs" />
     <Compile Include="SqlServer\SqlDataReaderExensions.cs" />
     <Compile Include="SqlServer\SqlConnectionFactory.cs" />
-    <Compile Include="SqlServer\Query.cs" />
+    <Compile Include="SqlServer\SqlExecutor.cs" />
     <Compile Include="SqlServer\Table.cs" />
   </ItemGroup>
   <ItemGroup>
