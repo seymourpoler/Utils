@@ -21,7 +21,7 @@ namespace GambonIntegrationTest.SqlServer
 		
 		[Test]
 		public void ReturnsAllFromUsers(){
-			var users = sqlExecutor.Execute("SELECT * FROM USERS");
+			var users = sqlExecutor.ExecuteReader("SELECT * FROM USERS");
 			
 			Assert.IsNotNull(users);
 			Assert.IsInstanceOf(typeof(IEnumerable<dynamic>), users);
@@ -29,7 +29,7 @@ namespace GambonIntegrationTest.SqlServer
 		
 		[Test]
 		public void ReturnsFirstOrDefaultFromUsers(){
-			var result = sqlExecutor.FirstOrDefault("SELECT * FROM USERS");
+			var result = sqlExecutor.ExecuteFirstOrDefault("SELECT * FROM USERS");
 			
 			Assert.IsNull(result);
 		}

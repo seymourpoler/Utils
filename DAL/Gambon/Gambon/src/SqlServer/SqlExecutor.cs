@@ -14,7 +14,7 @@ namespace Gambon.SqlServer
 			this.sqlConnectionFactory = sqlConnectionFactory;
 		}
 		
-		public IEnumerable<dynamic> Execute(string sql){
+		public IEnumerable<dynamic> ExecuteReader(string sql){
 			using(var connection = sqlConnectionFactory.Create()){
 				var command = new SqlCommand(sql, connection);
                 var dataReader = command.ExecuteReader();
@@ -25,8 +25,15 @@ namespace Gambon.SqlServer
 			}
 		}
 		
-		public dynamic FirstOrDefault(string sql){
-			return Execute(sql).FirstOrDefault();
+		public dynamic ExecuteFirstOrDefault(string sql){
+			return ExecuteReader(sql).FirstOrDefault();
+		}
+		
+		public void ExecuteNonQuery(string sql){
+			using(var connection = sqlConnectionFactory.Create()){
+				var command = new SqlCommand(sql, connection);
+                command.ExecuteNonQuery();
+			}
 		}
 	}
 }
