@@ -21,7 +21,7 @@ namespace Gambon.SqlServer
                  {
 				 	yield return dataReader.ToDynamic();
                  }
-}
+			}
 		}
 	}
 }
