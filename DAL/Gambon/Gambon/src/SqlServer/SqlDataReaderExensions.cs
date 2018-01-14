@@ -12,10 +12,10 @@ namespace Gambon.SqlServer
 			var result = expandoObject as IDictionary<string, object>;
 			var values = new object[dataReader.FieldCount];
 			dataReader.GetValues(values);
-			for(var i = 0; i < values.Length; i++)
+			for(var position = 0; position < values.Length; position++)
 			{
-				var value = values[i];
-				result.Add(dataReader.GetName(i), DBNull.Value.Equals(value) ? null : value);
+				var value = values[position];
+				result.Add(dataReader.GetName(position), DBNull.Value.Equals(value) ? null : value);
 			}
 			return result as dynamic;
 		}
