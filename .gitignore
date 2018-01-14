@@ -157,6 +157,7 @@ $RECYCLE.BIN/
 
 DAL/Gambon/Gambon/src/bin
 DAL/Gambon/Gambon/test/unit/Gambon/bin
+DAL/Gambon/Gambon/test/integration/Gambon/bin
 Web/MVC/HttpRequestBuilder/HttpRequestBuilder/bin
 Web/MVC/HttpRequestBuilder/HttpRequestBuilder/obj
 Web/MVC/HttpRequestBuilder/HttpRequestBuilder.Tests/bin

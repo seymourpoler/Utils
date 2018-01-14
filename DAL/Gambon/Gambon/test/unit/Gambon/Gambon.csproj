@@ -37,7 +37,7 @@
     <Reference Include="Microsoft.CSharp">
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>Vendors\nunit.framework.dll</HintPath>
+      <HintPath>..\..\..\vendors\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -45,8 +45,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions">
     </Reference>
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq">
     </Reference>
@@ -57,11 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core" />
-    <Folder Include="Vendors" />
     <Folder Include="SqlServer" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Vendors\nunit.framework.dll" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\src\Gambon.csproj">
