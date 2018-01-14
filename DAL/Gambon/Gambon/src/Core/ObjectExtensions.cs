@@ -15,9 +15,9 @@ namespace Gambon.Core
         public static dynamic ToDynamic(this object thing)
         {
 			if (thing is ExpandoObject)
-				return thing; //shouldn't have to... but just in case
+				return thing;
             var expando = new ExpandoObject();
-            var result = expando as IDictionary<string, object>; //work with the Expando as a Dictionary
+            var result = expando as IDictionary<string, object>; 
             if (IsNameValueCollection(thing)) {
                 var nameValueCollection = (NameValueCollection)thing;
 				nameValueCollection.Cast<string>()
