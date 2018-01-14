@@ -17,6 +17,7 @@ namespace GambonIntegrationTest.SqlServer
 			configuration = new Configuration();
 			sqlConnectionFactory = new SqlConnectionFactory(configuration);
 			sqlExecutor = new SqlExecutor(sqlConnectionFactory);
+			sqlExecutor.ExecuteNonQuery("DELETE FROM Users");
 		}
 		
 		[Test]
@@ -32,6 +33,13 @@ namespace GambonIntegrationTest.SqlServer
 			var result = sqlExecutor.ExecuteFirstOrDefault("SELECT * FROM USERS");
 			
 			Assert.IsNull(result);
+		}
+		
+		[Test]
+		public void ReturnsIdentificatorFromInsertedUser(){
+			var userId = sqlExecutor.ExecuteNonQuery("INSERT INTO USERS (Email, FirstName, LastName, Age) VALUES ('pp@pp.es', 'John', 'Smith', 53)");
+			
+			Assert.IsInstanceOf(typeof(int), userId);
 		}
 	}
 }

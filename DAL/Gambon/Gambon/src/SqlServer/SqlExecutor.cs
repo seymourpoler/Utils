@@ -29,10 +29,10 @@ namespace Gambon.SqlServer
 			return ExecuteReader(sql).FirstOrDefault();
 		}
 		
-		public void ExecuteNonQuery(string sql){
+		public int ExecuteNonQuery(string sql){
 			using(var connection = sqlConnectionFactory.Create()){
 				var command = new SqlCommand(sql, connection);
-                command.ExecuteNonQuery();
+                return command.ExecuteNonQuery();
 			}
 		}
 	}
