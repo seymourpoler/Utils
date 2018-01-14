@@ -15,9 +15,22 @@ namespace Gambon.SqlServer
 			for(var position = 0; position < values.Length; position++)
 			{
 				var value = values[position];
-				result.Add(dataReader.GetName(position), DBNull.Value.Equals(value) ? null : value);
+				result.Add(
+					key: GetNameFrom(dataReader, position) , 
+					value: GetValueFrom(value));
 			}
 			return result as dynamic;
+		}
+		
+		private static string GetNameFrom(SqlDataReader dataReader, int position){
+			return dataReader.GetName(position);
+		}
+		
+		private static object GetValueFrom(object value){
+			if(DBNull.Value.Equals(value)){
+				return null;
+			}
+			return value;
 		}
 	}
 }
