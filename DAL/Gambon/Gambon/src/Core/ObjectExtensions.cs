@@ -12,11 +12,10 @@ namespace Gambon.Core
         public static dynamic ToDynamic(this object thing)
         {
 			if (thing is ExpandoObject)
-				return thing; //shouldn't have to... but just in case
+				return thing;
             var expando = new ExpandoObject();
-            var result = expando as IDictionary<string, object>; //work with the Expando as a Dictionary
-            if (thing.GetType() == typeof(NameValueCollection) || 
-                thing.GetType().IsSubclassOf(typeof(NameValueCollection))) {
+            var result = expando as IDictionary<string, object>; 
+            if (IsNameValueCollection(thing)) {
                 var nameValueCollection = (NameValueCollection)thing;
 				nameValueCollection.Cast<string>()
                 	.Select(key => new KeyValuePair<string, object>(key, nameValueCollection[key]))
@@ -24,7 +23,7 @@ namespace Gambon.Core
                 	.ForEach(result.Add);
                 return result;
             }
-            if (typeof(IDictionary).IsAssignableFrom(thing.GetType()))
+            if (IsDictionary(thing))
 			{
                 var nameValueCollection = (Dictionary <string, object>)thing;
                 nameValueCollection
@@ -39,6 +38,15 @@ namespace Gambon.Core
             return result;
         }
 		
+        private static bool IsNameValueCollection(object thing){
+        	return thing.GetType() == typeof(NameValueCollection) || 
+        		thing.GetType().IsSubclassOf(typeof(NameValueCollection));
+        }
+        
+        private static bool IsDictionary(object thing){
+            	return typeof(IDictionary).IsAssignableFrom(thing.GetType());
+            }
+        
 		public static IDictionary<string, object> ToDictionary(this object thing) {
             if(thing == null){
                 return null;
